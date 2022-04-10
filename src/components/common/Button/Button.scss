@@ -1,0 +1,38 @@
+@import "/src/styles/variables";
+
+button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: $body;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  position: relative;
+  transition: all 0.4s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.variant-contained {
+  background-color: $background-blue;
+
+  &:hover {
+    background-color: $background-blue-hover;
+    border: none;
+  }
+}
+
+.variant-outlined {
+  border: 2px solid $border-color-white;
+
+  &:hover {
+    background-color: $background-blue-hover;
+    border: none;
+  }
+}

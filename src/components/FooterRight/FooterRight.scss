@@ -1,0 +1,30 @@
+@import "/src/styles/variables";
+
+.footer-right {
+  width: 24%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (max-width: 1050px) {
+    height: 100px;
+  }
+
+  .socials {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1050px) {
+      margin-top: 40px;
+    }
+  }
+
+  .tnc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

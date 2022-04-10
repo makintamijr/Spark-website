@@ -1,0 +1,36 @@
+@import "/src/styles/variables";
+
+.discover-left {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+    text-align: center;
+  }
+
+  .discover-body {
+    width: 80%;
+
+    @media (max-width: 1050px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  h1 {
+    font-family: $heading;
+    line-height: 80px;
+
+    @media (max-width: 1024px) {
+      line-height: 62px;
+    }
+  }
+  p {
+    margin: 20px 0 40px 0;
+    font-family: $body;
+    line-height: 20px;
+  }
+}

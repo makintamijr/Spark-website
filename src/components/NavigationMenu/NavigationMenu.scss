@@ -1,0 +1,54 @@
+@import "/src/styles/variables";
+
+.nav-wrapper {
+  width: 100vw;
+  min-height: 10vh;
+  background-color: $background-black;
+  justify-content: center;
+  display: flex;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+
+  .nav-container {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    .nav-center {
+      .nav-links {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .login {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .buger-menu {
+        color: #fff;
+        cursor: pointer;
+        font-size: xx-large;
+        transition: all ease 0.3s;
+        display: none;
+        &:hover {
+          color: $background-blue;
+        }
+
+        @media (max-width: 768px) {
+          display: flex;
+        }
+      }
+    }
+  }
+}

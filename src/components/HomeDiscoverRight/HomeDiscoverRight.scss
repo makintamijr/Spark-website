@@ -1,0 +1,30 @@
+@import "/src/styles/variables";
+
+.discover-right {
+  width: 60vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../img/hd-img.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+    margin-top: 50px;
+  }
+  // img {
+  //   width: 500px;
+  //   height: 500px;
+
+  //   @media (max-width: 1050px) {
+  //     padding-top: 50px;
+  //   }
+  //   // @media (max-width: 723px) {
+  //   //   width: 232px;
+  //   //   height: 322px;
+  //   // }
+  // }
+}

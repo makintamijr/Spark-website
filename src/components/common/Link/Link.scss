@@ -1,0 +1,10 @@
+@import "/src/styles/variables";
+
+a {
+  font-family: $heading;
+  transition: all 200ms linear;
+
+  &:hover {
+    color: $background-blue;
+  }
+}

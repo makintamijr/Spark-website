@@ -1,0 +1,17 @@
+@import "/src/styles/variables";
+
+.brands {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
+
+  .brand-icons {
+    width: 200px;
+    padding-top: 50px;
+  }
+}

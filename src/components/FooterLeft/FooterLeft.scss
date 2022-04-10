@@ -1,0 +1,22 @@
+@import "/src/styles/variables";
+
+.footer-left {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .links-1 {
+    width: 370px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "/src/styles/variables";
+.homelearn-wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .homelearn-container {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+}

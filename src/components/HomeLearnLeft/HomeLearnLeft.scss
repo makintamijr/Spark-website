@@ -1,0 +1,28 @@
+@import "/src/styles/variables";
+
+.homelearn-left {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+  }
+  img {
+    width: 200px;
+    height: 316px;
+
+    @media (max-width: 1050px) {
+      width: 310px;
+      height: 522px;
+    }
+    @media (max-width: 723px) {
+      width: 232px;
+      height: 322px;
+    }
+  }
+  .img2 {
+    margin: 200px 0 0 30px;
+  }
+}

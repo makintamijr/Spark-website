@@ -1,0 +1,13 @@
+@import "/src/styles/variables";
+
+input {
+  width: 300px;
+  height: 40px;
+  border: 2px solid $border-color-blue;
+  background: none;
+  color: #fff;
+
+  &:focus {
+    outline: none;
+  }
+}

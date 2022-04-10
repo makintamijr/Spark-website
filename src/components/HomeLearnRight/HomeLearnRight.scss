@@ -1,0 +1,38 @@
+@import "/src/styles/variables";
+
+.homelearn-right {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // padding-left: 50px;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .homelearn-body {
+    width: 70%;
+
+    @media (max-width: 1050px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  h1 {
+    font-family: $heading;
+    line-height: 80px;
+
+    @media (max-width: 1024px) {
+      line-height: 62px;
+    }
+  }
+  p {
+    margin: 20px 0 40px 0;
+    font-family: $body;
+    line-height: 20px;
+  }
+}

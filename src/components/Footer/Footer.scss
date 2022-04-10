@@ -1,0 +1,43 @@
+@import "/src/styles/variables";
+
+.footer-wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  background-color: $background-footer;
+
+  .footer-container {
+    width: 90vw;
+    height: 70vh;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    .footer-contents {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .footer-lns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @media (max-width: 1050px) {
+          flex-direction: column;
+          display: flex;
+          align-items: flex-start;
+        }
+      }
+    }
+    span {
+      padding-top: 50px;
+      font-size: 0.7rem;
+      color: $background-light-dark;
+    }
+  }
+}

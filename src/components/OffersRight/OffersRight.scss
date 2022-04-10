@@ -1,0 +1,15 @@
+@import "/src/styles/variables";
+
+.o-right {
+  width: 40vw;
+  height: 70vh;
+  background-image: url("../../img//ho-img.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+    margin-top: 50px;
+  }
+}

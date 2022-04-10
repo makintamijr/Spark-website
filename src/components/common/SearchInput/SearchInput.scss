@@ -1,0 +1,31 @@
+@import "/src/styles/variables";
+
+.search-input {
+  width: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 468px;
+  }
+
+  input {
+    width: 500px;
+    height: 40px;
+    border: 2px solid $border-color-blue;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    height: 36px;
+    position: absolute;
+    right: 5px;
+  }
+}
