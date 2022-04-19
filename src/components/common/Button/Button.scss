@@ -12,7 +12,7 @@ button {
   line-height: 24px;
   letter-spacing: 0.03em;
   position: relative;
-  transition: all 0.4s;
+  transition: all 400ms ease;
 
   &:hover {
     cursor: pointer;

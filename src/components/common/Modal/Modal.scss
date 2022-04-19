@@ -1,0 +1,42 @@
+@import "/src/styles/variables";
+
+.modal {
+  width: 50vw;
+  height: 30vh;
+  max-width: 600px;
+  min-width: 300px;
+  max-width: 600px;
+  box-shadow: $shadow;
+
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  background: $background-white;
+
+  .modal-children {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    color: $background-black;
+  }
+
+  .modal-button {
+    position: relative;
+    bottom: 1.5rem;
+    padding: 0 3rem;
+    min-height: 3rem;
+    margin: auto auto 0 auto;
+    color: #f7f7f7;
+    border: none;
+    box-shadow: $shadow;
+  }
+}
+
+.gradient {
+  background: $gradient;
+}

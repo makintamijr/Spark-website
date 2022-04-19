@@ -1,10 +1,14 @@
 import React from "react";
 import Button from "../common/Button/Button";
 
-const LearnMoreBtn = () => {
+const LearnMoreBtn = ({ onClick }) => {
   return (
     <>
-      <Button variant={"outlined"}>Learn More</Button>
+      <div>
+        <Button variant={"outlined"} onClick={onClick}>
+          Learn More
+        </Button>
+      </div>
     </>
   );
 };

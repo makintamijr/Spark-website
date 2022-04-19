@@ -1,33 +1,30 @@
 import React from "react";
 import "./Button.scss";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 // const variantMapping = {
 //   contained: "contained",
 //   outlined: "outlined",
 // };
 
-const Button = ({
-  variant,
-  color,
-  backgroundColor,
-  border,
-  borderRadius,
-  onClick,
-  children,
-  ...props
-}) => {
+const Button = ({ variant, onClick, children, ...props }) => {
   //
 
   return (
     <>
-      <button
-        onClick={onClick}
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{
+          scale: 0.8,
+        }}
+        type="button"
         className={classNames({ [`variant-${variant}`]: variant })}
         {...props}
+        onClick={onClick}
       >
         {children}
-      </button>
+      </motion.button>
     </>
   );
 };
