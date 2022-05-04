@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  margin-top: 8rem;
+
+  @media (max-width: 1050px) {
+  }
 
   .homelearn-container {
     width: 90vw;

@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../common/Button/Button";
 import Typography from "../common/Typography/Typography";
-import { motion } from "framer-motion";
 import "./HomeDiscoverLeft.scss";
 
 const HomeDiscoverLeft = () => {

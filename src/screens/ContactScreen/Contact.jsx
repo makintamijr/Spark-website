@@ -1,29 +1,41 @@
-import { useState } from "react";
-import Button from "../../components/common/Button/Button";
-import Input from "../../components/common/Input/Input";
-import Typography from "../../components/common/Typography/Typography";
+import React from "react";
 import "./Contact.scss";
+import { motion } from "framer-motion";
+import RouteTransitionIn from "../../RouteTransitionIn";
+import TypographyBD from "./TypographyBD";
+import ButtonBD from "./ButtonBD";
+import ImageBD from "./ImageBD";
+import LinksBD from "./LinksBD";
+import InputBD from "./InputBD";
+import BackdropBD from "./BackdropBD";
 
 const Contact = () => {
   //
-  const [isOpen, setIsOpen] = useState(false);
+
   //
   return (
     <>
-      <Typography variant={"h1"}>spark!</Typography>
-      <Button variant={"outlined"} onClick={() => setIsOpen(!isOpen)}>
-        opendrawer
-      </Button>
-      <Input type="text" placeholder="myinput" />
-      {/* <Drawer isOpen={isOpen} onClose={() => setIsOpen(false)} position="right">
-        <div>
-          <Button variant={"contained"} onClick={() => setIsOpen(false)}>
-            Close
-          </Button>
-          <Typography variant={"body1"}>The Drawer Content</Typography>
-          <input type={"text"} />
+      <motion.div
+        className="contact-wrapper"
+        variants={RouteTransitionIn}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
+        <div className="contact-container">
+          <TypographyBD />
+
+          <ButtonBD />
+
+          <ImageBD />
+
+          <LinksBD />
+
+          <InputBD />
+
+          <BackdropBD />
         </div>
-      </Drawer> */}
+      </motion.div>
     </>
   );
 };
