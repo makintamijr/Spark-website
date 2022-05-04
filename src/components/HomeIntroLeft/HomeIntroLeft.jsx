@@ -14,7 +14,7 @@ const HomeIntroLeft = () => {
         transition={{ delay: 1.5, type: "tween" }}
       >
         <Typography variant={"h1"}>
-          Find The Nearest Charging Station For Your Cars
+          Find The Nearest Charging Station For Your Carszz
         </Typography>
 
         <div className="homeintro-body">
