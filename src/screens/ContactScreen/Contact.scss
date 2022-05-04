@@ -1,9 +1,82 @@
 @import "/src/styles/variables";
 
-// .btn {
-//   width: 100px;
-// }
+.contact-wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.t1 {
-  color: green;
+  .contact-container {
+    width: 90vw;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .component-2-box {
+      margin-top: 3rem;
+    }
+
+    .contact-component {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      margin-top: 2rem;
+      gap: 1.3rem;
+
+      h6,
+      p {
+        width: 100%;
+        align-items: flex-start;
+      }
+
+      .component-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        position: relative;
+        gap: 1.2rem;
+        border: 1px solid var(--color);
+        border-radius: 16px;
+      }
+
+      .button-box {
+        width: 60%;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .button-box {
+          display: flex;
+        }
+      }
+
+      .img-box {
+        align-items: center;
+        img {
+          width: 50%;
+        }
+      }
+
+      .links-box {
+        width: 90%;
+        align-items: center;
+        a {
+          cursor: pointer;
+        }
+
+        .backdrop-box {
+          p {
+            cursor: pointer !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+span {
+  color: rgb(251, 190, 99);
 }

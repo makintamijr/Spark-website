@@ -5,8 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
   background-color: $background-footer;
+  color: #fff;
+  margin-top: 20rem;
 
   .footer-container {
     width: 90vw;
@@ -20,6 +21,10 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+
+      a {
+        color: #fff;
+      }
 
       .footer-lns {
         display: flex;

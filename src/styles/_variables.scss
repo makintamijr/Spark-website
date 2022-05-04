@@ -2,6 +2,7 @@
 @import "/src/styles/font.scss";
 
 $background-black: rgba(0, 0, 0, 1);
+$background-white: #fff;
 $background-light-dark: rgba(143, 141, 141, 0.598);
 $background-white: #ffffff;
 $background-footer: #090909;
@@ -16,3 +17,15 @@ $heading: "TomatoSemiBold";
 
 $shadow: 0px 10px 15px -1px rgba(0, 0, 0, 0.1);
 $gradient: linear-gradient(180.08deg, #000000 0.07%, #66a9da 160.65%);
+
+// -------------
+
+:root {
+  --background: black;
+  --color: #fff;
+}
+
+[data-theme="light"] {
+  --background: #cdcccc;
+  --color: black;
+}
