@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+
+.sidenav {
+  position: relative;
+  ul {
+    position: fixed;
+    top: -14px;
+    bottom: 0;
+    right: 0;
+    background: $gradient;
+    width: 300px;
+    height: 100%;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px;
+    text-align: start;
+    transition: all ease 0.5s;
+
+    .close-icon-container {
+      display: flex;
+      justify-content: flex-end;
+
+      .close-icon {
+        font-size: xx-large;
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+          color: $background-blue;
+        }
+      }
+    }
+
+    li {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      a {
+        cursor: pointer;
+        color: #fff;
+
+        :hover {
+          color: $background-blue !important;
+        }
+      }
+    }
+
+    button {
+      margin-top: 100px;
+    }
+  }
+}

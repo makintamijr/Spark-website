@@ -9,10 +9,12 @@ const HomeIntro = () => {
   return (
     <>
       <div className="homeintro-wrapper">
-        <div className="homeintro-container">
-          <HomeIntroLeft />
+        <div className="background-container">
+          <div className="homeintro-container">
+            <HomeIntroLeft />
 
-          <HomeIntroRight img1={img1} img2={img2} />
+            <HomeIntroRight img1={img1} img2={img2} />
+          </div>
         </div>
       </div>
     </>

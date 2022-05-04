@@ -14,7 +14,6 @@ const Button = ({ variant, onClick, children, ...props }) => {
   return (
     <>
       <motion.button
-        whileHover={{ scale: 1.1 }}
         whileTap={{
           scale: 0.8,
         }}

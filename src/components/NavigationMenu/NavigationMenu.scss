@@ -2,8 +2,7 @@
 
 .nav-wrapper {
   width: 100vw;
-  min-height: 10vh;
-  background-color: $background-black;
+  background-color: var(--background);
   justify-content: center;
   display: flex;
   z-index: 1;
@@ -12,10 +11,12 @@
 
   .nav-container {
     width: 90vw;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    position: relative;
 
     .nav-center {
       .nav-links {
@@ -29,6 +30,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      .lightmode-toggle {
+        padding-right: 40px;
+        cursor: pointer;
+        color: var(--color);
+      }
+
       .login {
         @media (max-width: 768px) {
           display: none;
@@ -36,7 +44,7 @@
       }
 
       .buger-menu {
-        color: #fff;
+        color: var(--color);
         cursor: pointer;
         font-size: xx-large;
         transition: all ease 0.3s;

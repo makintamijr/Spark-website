@@ -2,11 +2,17 @@ import React from "react";
 import SearchInput from "../../components/common/SearchInput/SearchInput";
 import Typography from "../../components/common/Typography/Typography";
 import "./HomeIntroLeft.scss";
+import { motion } from "framer-motion";
 
 const HomeIntroLeft = () => {
   return (
     <>
-      <div className="home-left">
+      <motion.div
+        className="home-left"
+        initial={{ x: "-100vw", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 1.5, type: "tween" }}
+      >
         <Typography variant={"h1"}>
           Find The Nearest Charging Station For Your Car
         </Typography>
@@ -22,7 +28,7 @@ const HomeIntroLeft = () => {
         <div className="search">
           <SearchInput placeholder="EV Points, Etc." />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

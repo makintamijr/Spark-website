@@ -15,8 +15,9 @@
     height: 40px;
     border: 2px solid $border-color-blue;
     background: none;
-    color: #fff;
-    font-size: 20px;
+    color: var(--color);
+    font-size: 16px;
+    padding-left: 20px;
 
     &:focus {
       outline: none;

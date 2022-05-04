@@ -5,21 +5,30 @@ import HomeLearnMore from "../../components/HomeLearnMore/HomeLearnMore";
 import HomeDiscover from "../../components/HomeDiscover/HomeDiscover";
 import Partners from "../../components/Partners/Partners";
 import Offers from "../../components/Offer/Offers";
+import { motion } from "framer-motion";
+import RouteTransitionIn from "../../RouteTransitionIn";
 
 const HomeScreen = () => {
   return (
     <>
-      <HomeIntro />
+      <motion.div
+        variants={RouteTransitionIn}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
+        <HomeIntro />
 
-      <HomeStats />
+        <HomeStats />
 
-      <HomeLearnMore />
+        <HomeLearnMore />
 
-      <HomeDiscover />
+        <HomeDiscover />
 
-      <Partners />
+        <Partners />
 
-      <Offers />
+        <Offers />
+      </motion.div>
     </>
   );
 };
